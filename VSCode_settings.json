@@ -1,0 +1,190 @@
+{
+    "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": true,
+    "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
+    "window.zoomLevel": 0,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.detectIndentation": true
+    },
+    "git.confirmSync": false,
+    "workbench.colorCustomizations" : {
+        "editorBracketMatch.border" :"#ff00d4"
+    },
+    "editor.tokenColorCustomizations": {
+        "comments": "#00ffd55d",
+        "numbers": "#eeff00cb",
+        "variable": "#eeff00cb",
+        "textMateRules" : [
+            {
+                "scope" : [
+                    "constant.language.boolean.true"
+                ],
+                "settings" : {
+                    "foreground" : "#2bff00cb"
+                }
+            },
+            {
+                "scope" : [
+                    "constant.language.boolean.false"
+                ],
+                "settings" : {
+                    "foreground" : "#ff0000cb"
+                }
+            },
+            {
+                "scope" : [
+                    "constant.language.apex"
+                ],
+                "settings" : {
+                    "foreground" : "#fa00a7d7"
+                }
+            },
+            {
+                "scope" : [
+                    "variable.parameter"
+                ],
+                "settings" : {
+                    "foreground" : "#3cff009a"
+                }
+            },
+            {
+                "scope" : [
+                    "variable.other.readwrite"
+                ],
+                "settings" : {
+                    "foreground" : "#00ffbfd5"
+                }
+            },
+            {
+                "scope" : [
+                    "variable.other.property"
+                ],
+                "settings" : {
+                    "foreground" : "#00e1ffd5"
+                }
+            },
+            {
+                "scope" : [
+                    "variable.other.object",
+                    "variable.object.property"
+                ],
+                "settings" : {
+                    "foreground" : "#0099ffd5"
+                }
+            },
+            {
+                "scope" : [
+                    "variable.other.object.property"
+                ],
+                "settings" : {
+                    "foreground" : "#0066ffd5"
+                }
+            },
+            {
+                "scope" : [
+                    "meta.class.body"
+                ],
+                "settings" : {
+                    "foreground" : "#12bce6da"
+                }
+            },
+            {
+                "scope" : [
+                    "constant.other.apex",
+                    "constant.character.escape",
+                    "punctuation.definition.method-parameters.end"
+                ],
+                "settings" : {
+                    "foreground" : "#fa7000d7"
+                }
+            },
+            {
+                "scope" : [
+                    "keyword.control.new"
+                ],
+                "settings" : {
+                    "foreground" : "#faf600d7"
+                }
+            },
+            {
+                "scope" : [
+                    "keyword.control.catch-exception",
+                    "keyword.control.apex"
+                ],
+                "settings" : {
+                    "foreground" : "#facc00cc"
+                }
+            },
+            {
+                "scope" : [
+                    "storage.modifier"
+
+                ],
+                "settings" : {
+                    "foreground" : "#a2fa00"
+                }
+            },
+            {
+                "scope" : [
+                    "storage.type"
+                ],
+                "settings" : {
+                    "foreground" : "#00fa68bd"
+                }
+            },
+            {
+                "scope" : [
+                    "punctuation.definition.method-parameters.begin",
+                    "punctuation.section.method.begin"
+                ],
+                "settings" : {
+                    "foreground" : "#faf600"
+                }
+            },
+            {
+                "scope" : [
+                    "punctuation.definition.block",
+                    "punctuation.section.method.end",
+                ],
+                "settings" : {
+                    "foreground" : "#009efa"
+                }
+            },
+            {
+                "scope" : [
+                    "meta.brace.square",
+                    "punctuation.definition.parameters.begin",
+                    "punctuation.section.block.begin.apex",
+                    "punctuation.definition.string.begin.apex",
+                    "punctuation.definition.string.begin"
+                ],
+                "settings" : {
+                    "foreground" : "#5cfa00"
+                }
+            },
+            {
+                "scope" : [
+                    "meta.brace.round",
+                    "punctuation.definition.parameters.end",
+                    "punctuation.section.block.end.apex",
+                    "punctuation.definition.string.end.apex",
+                    "punctuation.definition.string.end"
+                ],
+                "settings" : {
+                    "foreground" : "#f200fad7"
+                }
+            }
+        ]
+    },
+    "workbench.editor.showTabs": true,
+    "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.preferredDarkColorTheme": "Red",
+    "workbench.preferredLightColorTheme": "Abyss",
+    "settingsSync.ignoredSettings": [
+    
+    ],
+    "editor.fontLigatures": null
+}
