@@ -9,4 +9,6 @@ echo ${today}' : Initializing the script for reversion of the substitution of th
 cd /Users/gmaggi/Documents/personal-backend/personal-settings/backupDeloitte
 sudo cp ./${lastRun}/DeloitteWallpaper.jpg /var/deloitte/branding/DeloitteWallpaper.jpg
 
+rm lastRunTime.json
+
 echo ${today}' : Reverting done with no problem at '${now}'.' >> $LOG

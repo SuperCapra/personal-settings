@@ -28,4 +28,4 @@ sudo cp ../wallpaper/wallpaperOfChioce.jpg /var/deloitte/branding/DeloitteWallpa
 
 echo ${today}': Wallpaper substituted at '${now}'. Now you can logout and log in with a new wallpaper.' >> ../backupDeloittelog.txt
 
-echo "{\"date\":\"${today}\"}" > $JSONLASTTIME
+echo "{\"lastRun\":\"${today}\"}" > $JSONLASTTIME
