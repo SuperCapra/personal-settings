@@ -1,0 +1,15 @@
+2021-02-09: No wallpaperOfChioce detected.
+2021-02-09: No wallpaperOfChioce detected.
+2021-02-09: No wallpaperOfChioce detected at 2021-02-09-21:50:27.
+2021-02-09: Script started at 2021-02-09-21:51:16.
+2021-02-09: Wallpaper backed up at 2021-02-09-21:51:16 in the folder /Users/gmaggi/Documents/personal-backend/personal-settings/backupDeloitte/2021-02-09.
+2021-02-09: Renamed wallpaper 2021-02-09-21:51:16.
+2021-02-09-22:01:40 | Script started.
+2021-02-09-22:01:40 | Folder created at .backupDeloitte/2021-02-09.
+2021-02-09-22:01:40 | Wallpaper backed up in the folder .backupDeloitte/2021-02-09.
+2021-02-09-22:01:40 | Script Ended successfully.
+2021-02-09 22:21:10 | Script started.
+2021-02-09 22:21:10 | Folder created at .backupDeloitte/2021-02-09.
+2021-02-09 22:21:10 | Wallpaper backed up in the folder .backupDeloitte/2021-02-09.
+2021-02-09 22:21:10 | Wallpaper substituted successfully.
+2021-02-09 22:21:10 | Script Ended successfully.
