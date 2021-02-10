@@ -7,7 +7,7 @@ echo ${today}' : Initializing the script for reversion of the substitution of th
 cd /Users/gmaggi/Documents/personal-backend/personal-settings/backupDeloitte
 
 JSONLASTTIME=./lastRunTime.json
-lastRun=(jq -r .lastRun lastRunTime.json)
+lastRun=`(jq -r .lastRun lastRunTime.json)`
 
 if [ -f "${JSONLASTTIME}" ] && [ -d "${lastRun}" ]; then
     sudo cp ./${lastRun}/DeloitteWallpaper.jpg /var/deloitte/branding/DeloitteWallpaper.jpg
