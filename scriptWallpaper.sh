@@ -8,7 +8,7 @@ cd /Users/gmaggi/Documents/personal-backend/personal-settings/
 
 LOG=./log.txt
 JSONLASTTIME=./lastRunTime.json
-wallpaperOfChioce=./wallpaper/wallpaperOfChioce.jpg
+wallpaperOfChioce=./wallpaper/wallpaperOfChoice.jpg
 
 if [[ ${modifiedDateTime} != ${modifiedDateTimeFromJson} ]]; then
     if [ -f "${wallpaperOfChioce}" ]; then
@@ -48,10 +48,12 @@ if [[ ${modifiedDateTime} != ${modifiedDateTimeFromJson} ]]; then
 
     else
         if [ -f "${LOG}" ]; then
-            echo ${now}' | [SCRIPT CHANGE WALLPAPER] | No wallpaperOfChioce detected.' >> ${LOG}
+            echo ${now}' | [SCRIPT CHANGE WALLPAPER] | No wallpaperOfChoice detected.' >> ${LOG}
+            echo ${now}' | [SCRIPT CHANGE WALLPAPER] | Script ended.' >> $LOG
         else
             touch ${LOG}
-            echo ${now}' | [SCRIPT CHANGE WALLPAPER] | No wallpaperOfChioce detected and log.' > ${LOG}
+            echo ${now}' | [SCRIPT CHANGE WALLPAPER] | No wallpaperOfChoice detected and log.' > ${LOG}
+            echo ${now}' | [SCRIPT CHANGE WALLPAPER] | Script ended.' >> $LOG
         fi
     fi
 else

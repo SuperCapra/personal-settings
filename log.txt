@@ -1,1 +1,7 @@
 2021-02-10 07:25:26 | Last modified wallpaper is made by this script.
+2021-03-05 14:09:11 | [SCRIPT CHANGE WALLPAPER] | No wallpaperOfChioce detected.
+2021-03-05 14:10:21 | [SCRIPT CHANGE WALLPAPER] | Script started.
+2021-03-05 14:10:21 | [SCRIPT CHANGE WALLPAPER] | Folder created at .backupDeloitte/2021-03-05.
+2021-03-05 14:10:21 | [SCRIPT CHANGE WALLPAPER] | Wallpaper backed up in the folder .backupDeloitte/2021-03-05.
+2021-03-05 14:10:21 | [SCRIPT CHANGE WALLPAPER] | Wallpaper substituted successfully.
+2021-03-05 14:10:21 | [SCRIPT CHANGE WALLPAPER] | Script Ended successfully.
