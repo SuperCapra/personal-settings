@@ -5,3 +5,8 @@
 2021-03-05 14:10:21 | [SCRIPT CHANGE WALLPAPER] | Wallpaper backed up in the folder .backupDeloitte/2021-03-05.
 2021-03-05 14:10:21 | [SCRIPT CHANGE WALLPAPER] | Wallpaper substituted successfully.
 2021-03-05 14:10:21 | [SCRIPT CHANGE WALLPAPER] | Script Ended successfully.
+2021-03-05 14:18:56 | [SCRIPT CHANGE WALLPAPER] | Script started.
+2021-03-05 14:18:56 | [SCRIPT CHANGE WALLPAPER] | Folder created at .backupDeloitte/2021-03-05.
+2021-03-05 14:18:56 | [SCRIPT CHANGE WALLPAPER] | Wallpaper backed up in the folder .backupDeloitte/2021-03-05.
+2021-03-05 14:18:56 | [SCRIPT CHANGE WALLPAPER] | Wallpaper substituted successfully.
+2021-03-05 14:18:56 | [SCRIPT CHANGE WALLPAPER] | Script Ended successfully.
