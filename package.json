@@ -1,0 +1,21 @@
+{
+  "name": "personal-settings",
+  "version": "1.0.0",
+  "description": "* **VSCode_settings.json:** setting for VS CODE * **scriptWallpaper.sh:** script bash to change the wallpaper to macOS     > *If the script does not has the right to be executed we have to lauch che command `chmod +x ./\"NAMEOFTHESCRIPT\".sh`*.     > *For running the script it has to be installed jq, if is not installed run `brew install jq\"`* * **scriptRevert.sh:** script bash to revert the changing of the wallpaper to macOS",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node code/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperCapra/personal-settings.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperCapra/personal-settings/issues"
+  },
+  "homepage": "https://github.com/SuperCapra/personal-settings#readme"
+}
