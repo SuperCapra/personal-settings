@@ -4,7 +4,8 @@
   "description": "* **VSCode_settings.json:** setting for VS CODE * **scriptWallpaper.sh:** script bash to change the wallpaper to macOS     > *If the script does not has the right to be executed we have to lauch che command `chmod +x ./\"NAMEOFTHESCRIPT\".sh`*.     > *For running the script it has to be installed jq, if is not installed run `brew install jq\"`* * **scriptRevert.sh:** script bash to revert the changing of the wallpaper to macOS",
   "main": "index.js",
   "scripts": {
-    "start" : "node code/index.js",
+    "start": "node code/index.js",
+    "class": "node code/class.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/SuperCapra/personal-settings/issues"
   },
-  "homepage": "https://github.com/SuperCapra/personal-settings#readme"
+  "homepage": "https://github.com/SuperCapra/personal-settings#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.14.5"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "babel-cli": "^6.26.0"
+  }
 }
