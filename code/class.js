@@ -158,3 +158,102 @@ bike.changeRearGear()
 console.log('bike gear of the first bike, after protorype', bike.RearGear)
 bike2.changeRearGear()
 console.log('bike gear of the second bike, after protorype', bike2.RearGear)
+class MonsterA {
+  rand = Math.random()
+  growl = () => {
+    console.log('grrrr ' + this.rand)
+  }
+}
+
+class MonsterB {
+  rando = Math.random()
+}
+//with the prororype function the fat arrow function the key word this does not work
+MonsterB.prototype.growl = function() {
+  const randGrowl = Math.random()
+  console.log('grrrr ' + randGrowl + ' ' + this.rando)
+}
+
+const monsterA1 = new MonsterA()
+const monsterA2 = new MonsterA()
+const monsterB1 = new MonsterB()
+const monsterB2 = new MonsterB()
+
+// monsterA1.growl()
+// monsterA2.growl()
+// monsterB1.growl()
+// monsterB2.growl()
+
+let MONSTER = function() {
+  this.growl = () => {
+    console.log('grrrr ')
+  }
+}
+
+MONSTER.prototype.upateGrowl = function(value) {
+  this.growl = () => {
+    console.log(value)
+  }
+}
+
+let monster1 = new MONSTER()
+let monster2 = new MONSTER()
+
+monster1.growl()
+monster2.growl()
+monster2.upateGrowl('wof')
+monster1.growl()
+monster2.growl()
+
+let DOG = function() {}
+DOG.prototype.bark = function() {
+    console.log('bark')
+}
+
+DOG.prototype.upateBark = function(value) {
+  DOG.prototype.bark = () => {
+    console.log(value)
+  }
+}
+
+let dog1 = new DOG()
+let dog2 = new DOG()
+
+dog1.bark()
+dog2.bark()
+dog2.upateBark('wof')
+dog1.bark()
+dog2.bark()
+
+
+// x is a method assigned to the object using "this"
+var A = function () {
+  this.x = function () { console.log('A'); };
+};
+A.prototype.updateX = function( value ) {
+  this.x = function() { console.log( value ); }
+};
+
+var a1 = new A();
+var a2 = new A();
+a1.x();  // Displays 'A'
+a2.x();  // Also displays 'A'
+a1.updateX('Z');
+a1.x();  // Displays 'Z'
+a2.x();  // Still displays 'A'
+
+// Here x is a method assigned to the object using "prototype"
+var B = function () { };
+B.prototype.x = function () { console.log('B'); };
+
+B.prototype.updateX = function( value ) {
+  B.prototype.x = function() { console.log( value ); }
+}
+
+var b1 = new B();
+var b2 = new B();
+b1.x();  // Displays 'B'
+b2.x();  // Also displays 'B'
+b1.updateX('Y');
+b1.x();  // Displays 'Y'
+b2.x();  // Also displays 'Y' because by using prototype we have changed it for all instances
