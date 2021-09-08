@@ -167,4 +167,3 @@ const fn = (word) => {
 console.log('fn(w0)',fn(w0))
 console.log('fn(w1)',fn(w1))
 console.log('fn(email2)',fn('email2'))
-
