@@ -153,6 +153,18 @@ function y() {
 	return 'y is nor null nor undefined'
 
 }
-let y
-y()
+// let y
+// y()
+
+let w0 = 'email'
+let w1 = 'billy'
+
+const fn = (word) => {
+    if(word === ('email' || 'email2')) return 'email'
+    return 'nonemail'
+}
+
+console.log('fn(w0)',fn(w0))
+console.log('fn(w1)',fn(w1))
+console.log('fn(email2)',fn('email2'))
 
