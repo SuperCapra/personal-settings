@@ -167,3 +167,9 @@ const fn = (word) => {
 console.log('fn(w0)',fn(w0))
 console.log('fn(w1)',fn(w1))
 console.log('fn(email2)',fn('email2'))
+
+if(w0.search('w')) {
+    console.log('è maggiore di zero', w0.search('w'))
+} else {
+    console.log('è maggiore di minchia', w0.search('w'))
+}
