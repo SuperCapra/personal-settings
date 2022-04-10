@@ -1,0 +1,37 @@
+{
+	"creator": {
+		"scope": "javascript,html,apex",
+		"prefix": "creator",
+		"body": "$BLOCK_COMMENT_START \n\tcreated by gmaggi@deloitte.it \n\ton $CURRENT_DAY_NAME, $CURRENT_YEAR-$CURRENT_MONTH_NAME-$CURRENT_DATE \n$BLOCK_COMMENT_END"
+	},
+	"update": {
+		"scope": "javascript,html,apex",
+		"prefix": "update",
+		"body": "updated by $MOD \n on $CURRENT_DAY_NAME, $CURRENT_YEAR-$CURRENT_MONTH_NAME-$CURRENT_DATE"
+	},
+	"test": {
+		"scope": "apex",
+		"prefix": "test",
+		"body": "@IsTest\npublic with sharing class ${TM_FILENAME/(.*)\\..+$/$1/} {\n\t@TestSetup\n\tpublic static void testSetup(){\n\t\t$1\n\t}\n\n\t@IsTest\n\tpublic static void TESTMETHODNAME(){\n\t\t\n\t}\n}"
+	},
+	"soql": {
+		"scope": "apex",
+		"prefix": "soql",
+		"body": "[SELECT Id, Name, $1 FROM $2];"
+	},
+	"forApex": {
+		"scope": "apex",
+		"prefix": "for",
+		"body": "for($1 $2 : $3) {\n\t$4\n}"
+	},
+	"then": {
+		"scope": "javascript",
+		"prefix": "then",
+		"body": ".then(res => {\n\tlet resultParsed = JSON.parse(JSON.stringify(res))\n\tif(resultParsed.success) {\n\t\tconsole.log('success!')\n\t} else {\n\t\tconsole.log('error!')\n\t}\n}).catch(e => {\n\tconsole.log('Fatal Error!', e)\n})"
+	},
+	"parsing": {
+		"scope": "javascript",
+		"prefix": "parsing",
+		"body": "JSON.parse(JSON.stringify($1))"
+	}
+}
