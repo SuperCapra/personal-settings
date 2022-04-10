@@ -1,6 +1,5 @@
 {
 	"creator": {
-		"scope": "javascript,html,apex",
 		"prefix": "creator",
 		"body": "$BLOCK_COMMENT_START \n\tcreated by gmaggi@deloitte.it \n\ton $CURRENT_DAY_NAME, $CURRENT_YEAR-$CURRENT_MONTH_NAME-$CURRENT_DATE \n$BLOCK_COMMENT_END"
 	},
