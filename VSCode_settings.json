@@ -146,7 +146,7 @@
             {
                 "scope" : [
                     "punctuation.definition.block",
-                    "punctuation.section.method.end",
+                    "punctuation.section.method.end"
                 ],
                 "settings" : {
                     "foreground" : "#009efa"

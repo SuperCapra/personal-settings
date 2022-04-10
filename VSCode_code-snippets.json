@@ -24,6 +24,11 @@
 		"prefix": "for",
 		"body": "for($1 $2 : $3) {\n\t$4\n}"
 	},
+	"try": {
+		"scope": "apex",
+		"prefix": "try",
+		"body": "try {\n\t$1\n} catch (Exception ex) {\n\tUtils.debugHandler(ex);\n}"
+	},
 	"then": {
 		"scope": "javascript",
 		"prefix": "then",
