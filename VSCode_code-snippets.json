@@ -75,5 +75,10 @@
 		"scope": "apex",
 		"prefix": "ZafterUpdate",
 		"body": "public override void onAfterUpdate() {\n\tLOG.debug('Start ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterUpdate()');\n\tLOG.debug('End ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterUpdate()');\n}"
+	},
+	"Zdescriptor": {
+		"scope": "apex",
+		"prefix": "Zdescriptor",
+		"body": "$BLOCK_COMMENT_START*\n * @description ...\n * @author gmaggi@deloitte.it (Giovanni Maggi) | on $CURRENT_DAY_NAME, $CURRENT_DATE-$CURRENT_MONTH-$CURRENT_YEAR\n * @param ...\n*$BLOCK_COMMENT_END"
 	}
 }
