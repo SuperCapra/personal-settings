@@ -45,5 +45,35 @@
 		"scope": "javascript",
 		"prefix": "parsing",
 		"body": "JSON.parse(JSON.stringify($1))"
+	},
+	"ZhandlerComplete": {
+		"scope": "apex",
+		"prefix": "ZhandlerComplete",
+		"body": "public without sharing class ${TM_FILENAME/(.*)\\..+$/$1/} extends TRG_Base {\n\n\tpublic override void onBeforeInsert() {\n\t\tLOG.debug('Start ${TM_FILENAME/(.*)\\..+$/$1/}.onBeforeInsert()');\n\t\tLOG.debug('End ${TM_FILENAME/(.*)\\..+$/$1/}.onBeforeInsert()');\n\t}\n\n\tpublic override void onAfterInsert() {\n\t\tLOG.debug('Start ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterInsert()');\n\t\tLOG.debug('End ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterInsert()');\n\t}\n\n\tpublic override void onBeforeUpdate() {\n\t\tLOG.debug('Start ${TM_FILENAME/(.*)\\..+$/$1/}.onBeforeUpdate()');\n\t\tLOG.debug('End ${TM_FILENAME/(.*)\\..+$/$1/}.onBeforeUpdate()');\n\t}\n\n\tpublic override void onAfterUpdate() {\n\t\tLOG.debug('Start ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterUpdate()');\n\t\tLOG.debug('End ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterUpdate()');\n\t}\n}"
+	},
+	"Zhandler": {
+		"scope": "apex",
+		"prefix": "Zhandler",
+		"body": "public without sharing class ${TM_FILENAME/(.*)\\..+$/$1/} extends TRG_Base {}"
+	},
+	"ZbeforeInsert": {
+		"scope": "apex",
+		"prefix": "ZbeforeInsert",
+		"body": "public override void onBeforeInsert() {\n\tLOG.debug('Start ${TM_FILENAME/(.*)\\..+$/$1/}.onBeforeInsert()');\n\tLOG.debug('End ${TM_FILENAME/(.*)\\..+$/$1/}.onBeforeInsert()');\n}"
+	},
+	"ZafterInsert": {
+		"scope": "apex",
+		"prefix": "ZafterInsert",
+		"body": "public override void onAfterInsert() {\n\tLOG.debug('Start ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterInsert()');\n\tLOG.debug('End ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterInsert()');\n}"
+	},
+	"ZbeforeUpdate": {
+		"scope": "apex",
+		"prefix": "ZbeforeUpdate",
+		"body": "public override void onBeforeUpdate() {\n\tLOG.debug('Start ${TM_FILENAME/(.*)\\..+$/$1/}.onBeforeUpdate()');\n\tLOG.debug('End ${TM_FILENAME/(.*)\\..+$/$1/}.onBeforeUpdate()');\n}"
+	},
+	"ZafterUpdate": {
+		"scope": "apex",
+		"prefix": "ZafterUpdate",
+		"body": "public override void onAfterUpdate() {\n\tLOG.debug('Start ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterUpdate()');\n\tLOG.debug('End ${TM_FILENAME/(.*)\\..+$/$1/}.onAfterUpdate()');\n}"
 	}
 }
