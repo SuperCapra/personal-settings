@@ -3,6 +3,10 @@
 		"prefix": "creator",
 		"body": "$BLOCK_COMMENT_START \n\tcreated by gmaggi@deloitte.it \n\ton $CURRENT_DAY_NAME, $CURRENT_YEAR-$CURRENT_MONTH_NAME-$CURRENT_DATE \n$BLOCK_COMMENT_END"
 	},
+	"Zcreator": {
+		"prefix": "Zcreator",
+		"body": "$BLOCK_COMMENT_START \n * @description       :\n  @author            : gmaggi@deloitte.it (Giovanni Maggi)\n * @last modified on  : $CURRENT_DAY_NAME, $CURRENT_DATE-$CURRENT_MONTH-$CURRENT_YEAR\n * @last modified by gmaggi@deloitte.it (Giovanni Maggi)\n * Modifications Log\n * Ver\tDate\tAuthor\tModification\n * 1.0\t$CURRENT_DATE-$CURRENT_MONTH-$CURRENT_YEAR\tGiovanni Maggi\tInitial Version\n$BLOCK_COMMENT_END"
+	},
 	"update": {
 		"scope": "javascript,html,apex",
 		"prefix": "update",
