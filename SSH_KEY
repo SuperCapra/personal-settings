@@ -1,0 +1,21 @@
+For RSA KEY:
+ssh-keygen -C "gmaggi@deloitte.it"
+
+For SHA256 KEY: ssh-keygen -t ed25519 -C "gvnnmaggi@gmail.com"
+
+Step1: eval "$(ssh-agent -s)"
+Step2: touch config
+Step3: open config
+to the file config add the following:
+
+Host *.github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/{nome file chiave}
+Host ssh.dev.azure.com
+  IdentityFile ~/.ssh/{nome file chiave}
+  IdentitiesOnly yes
+  HostkeyAlgorithms +ssh-rsa
+  PubkeyAcceptedKeyTypes=ssh-rsa
+
+Step4:ssh-add --apple-use-keychain ~/.ssh/{nome file chiave}
