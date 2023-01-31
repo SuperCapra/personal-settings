@@ -20,3 +20,5 @@
 
 * **Find with process is running on a given port** `lsof -i tcp:PORT`
 * **Kill the process with the PID given** `kill -9 PID`
+
+* **TODO: write how to add SSH to the mac :)
