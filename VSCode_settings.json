@@ -1,6 +1,7 @@
 {
     "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": true,
     "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
+    "js/ts.implicitProjectConfig.experimentalDecorators":true,
     "window.zoomLevel": 0,
     "git.enableSmartCommit": true,
     "git.autofetch": true,
