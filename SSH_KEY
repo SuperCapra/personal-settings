@@ -4,6 +4,7 @@ ssh-keygen -C "gmaggi@deloitte.it"
 For SHA256 KEY: ssh-keygen -t ed25519 -C "gvnnmaggi@gmail.com"
 
 Step1: eval "$(ssh-agent -s)"
+Step1a: eval `ssh-agent`
 Step2: touch config
 Step3: open config
 to the file config add the following:
@@ -19,3 +20,7 @@ Host ssh.dev.azure.com
   PubkeyAcceptedKeyTypes=ssh-rsa
 
 Step4:ssh-add --apple-use-keychain ~/.ssh/{nome file chiave}
+
+Warning: add AddKeysToAgent yes in order to add the agent to the repository, `use ssh-add -l` to know which keys are added to your local agent
+
+to check the agent run `ssh-add -l`
