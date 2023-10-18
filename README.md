@@ -21,4 +21,24 @@
 * **Find with process is running on a given port** `lsof -i tcp:PORT`
 * **Kill the process with the PID given** `kill -9 PID`
 
-* **TODO: write how to add SSH to the mac :)
+## SSH KEYS HOW TO
+
+1. Go in the user folder (gmaggi), hence just open the terminal
+2. create the folder .ssh with the command `mkdir .ssh`
+3. create the file id_rsa `touch id_rsa`
+4. open the file id_rsa `open id_rsa` and paste inside the the private key of the SSH
+5. create the file config with `touch config` and add the following lines
+```
+Host *.github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa_github
+Host ssh.dev.azure.com
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+  HostkeyAlgorithms +ssh-rsa
+  PubkeyAcceptedKeyTypes=ssh-rsa
+```
+6. then secure the `id_rsa` file with the comand `chmod 400 ~/.ssh/id_rsa;`
+7. finally add the ssh key to the keychain with the command `ssh-add --apple-use-keychain ~/.ssh/id_rsa`
+8. the step 7 needs to be repeated with all the ssh keys
