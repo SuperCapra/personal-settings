@@ -29,6 +29,7 @@
 3. create the file id_rsa `touch id_rsa`
 4. open the file id_rsa `open id_rsa` and paste inside the the private key of the SSH
 5. create the file config with `touch config` and add the following lines
+
 ```
 Host *.github.com
   AddKeysToAgent yes
