@@ -44,4 +44,5 @@ Host ssh.dev.azure.com
 ```
 6. then secure the `id_rsa` file with the comand `chmod 400 ~/.ssh/id_rsa;`
 7. finally add the ssh key to the keychain with the command `ssh-add --apple-use-keychain ~/.ssh/id_rsa`
-8. the step 7 needs to be repeated with all the ssh keys
+7. * sometimes github loose the access to the RSA key, launch this to solve the problem `ssh-add --apple-use-keychain ~/.ssh/id_rsa_github` -> I think that is NETSKOPE
+8. the step 7 needs to be repeated with all the ssh keys 
