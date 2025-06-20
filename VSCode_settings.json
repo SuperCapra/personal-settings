@@ -5,11 +5,11 @@
     "window.zoomLevel": 0,
     "git.enableSmartCommit": true,
     "git.autofetch": true,
+    "git.confirmSync": false,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.detectIndentation": true
     },
-    "git.confirmSync": false,
     "workbench.colorCustomizations" : {
         "editorBracketMatch.border" :"#ff00d4"
     },
