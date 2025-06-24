@@ -7,15 +7,18 @@
 5. create the file config with `touch config` and add the following lines
 
 ```
-Host *.github.com
+# GitHub
+Host github.com
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa_github
+  IdentityFile ~/.ssh/rsa_github
+
+# Azure DevOps
 Host ssh.dev.azure.com
-  IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/rsa_deloitte
   IdentitiesOnly yes
   HostkeyAlgorithms +ssh-rsa
-  PubkeyAcceptedKeyTypes=ssh-rsa
+  PubkeyAcceptedKeyTypes +ssh-rsa
 ```
 6. then secure the `id_rsa` file with the comand `chmod 400 ~/.ssh/id_rsa;`
 7. finally add the ssh key to the keychain with the command `ssh-add --apple-use-keychain ~/.ssh/id_rsa`
