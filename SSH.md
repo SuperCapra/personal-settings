@@ -16,7 +16,8 @@ Host github.com
 # Azure DevOps
 Host ssh.dev.azure.com
   IdentityFile ~/.ssh/rsa_deloitte
-  IdentitiesOnly yes
+  AddKeysToAgent yes
+  UseKeychain yes
   HostkeyAlgorithms +ssh-rsa
   PubkeyAcceptedKeyTypes +ssh-rsa
 ```
@@ -26,3 +27,5 @@ Host ssh.dev.azure.com
 8. the step 7 needs to be repeated with all the ssh keys 
 
 Use Comand `ssh-add --apple-use-keychain ~/.ssh/id_rsa_github` for adding github ssh
+
+* Attention: do not use `IdentitiesOnly yes` becuase it asks for passphrase anytime you push
