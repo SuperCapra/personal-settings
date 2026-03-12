@@ -29,3 +29,4 @@ Host ssh.dev.azure.com
 Use Comand `ssh-add --apple-use-keychain ~/.ssh/id_rsa_github` for adding github ssh
 
 * Attention: do not use `IdentitiesOnly yes` becuase it asks for passphrase anytime you push
+** If gives the permission denied test the connection with `ssh -T git@github.com` into the folder after launching the command `ssh-add --apple-use-keychain ~/.ssh/id_rsa_personal` in the same folder
