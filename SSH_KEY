@@ -1,7 +1,6 @@
-For RSA KEY:
-ssh-keygen -C "gmaggi@deloitte.it"
+For RSA-4096 KEY (Azure): ssh-keygen -t rsa -b 4096 -C "gmaggi@deloitte.it"
 
-For SHA256 KEY: ssh-keygen -t ed25519 -C "gvnnmaggi@gmail.com"
+For ED25519 KEY (Github): ssh-keygen -t ed25519 -C "gvnnmaggi@gmail.com"
 
 Step1: eval "$(ssh-agent -s)"
 Step1a: eval `ssh-agent`

@@ -24,3 +24,11 @@
 }
 
 Where name needs to be the label of the org 
+
+Some other commands:
+login to specific url (general)
+`sf org login web --alias HERITA_UAT --set-default --instance-url https://test.salesforce.com`
+login to specific url (specific)
+`sf org login web --alias COPAN_UAT --set-default --instance-url https://copangroup--uat.sandbox.my.salesforce.com/`
+New retrieve:
+`sf project start retrieve --manifest src/package.xml `
