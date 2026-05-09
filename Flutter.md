@@ -13,3 +13,9 @@ Always launch `flutter pub run build_runner build --delete-conflicting-outputs` 
 
 ## Notification on iOS
 In the file iOS/Runner/AppDelegate.swift add the line `UNUserNotificationCenter.current().delegate = self` before the `return`
+
+## Xcode
+1. Install Xcode with iOS and Mac OS
+2. Launch `xcode-select -p`
+3. Launch `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
+4. verify `xcodebuild -version`
