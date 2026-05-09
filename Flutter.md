@@ -19,3 +19,4 @@ In the file iOS/Runner/AppDelegate.swift add the line `UNUserNotificationCenter.
 2. Launch `xcode-select -p`
 3. Launch `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
 4. verify `xcodebuild -version`
+5. Launch `brew install cocoapods` for cocoapods
