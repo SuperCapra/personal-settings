@@ -18,3 +18,14 @@ setInterval(() => {
         previous = current;
     }
 }, 300);`
+
+`let saved = [];
+
+const elementsList = document.querySelectorAll('[data-testid="content-list-item-card-title"]');
+elementsList.forEach(div => {
+    const link = div.querySelector('a');
+    let t = link.textContent;
+    console.log(t);
+});
+console.log(saved)
+`
